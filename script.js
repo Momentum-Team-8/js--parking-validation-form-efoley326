@@ -19,10 +19,18 @@ if (caryear.value < 1900); {
     return false;
 }
 
-datedays.value = ""
+function datedaysInput (numbers)
+    datedays.value = ""
 if (datedays.value === "") {
     function validateNumberInput(numbers)
+    if (datedays.value > 30)
+    alert("cannot exceed 30");
+    document.datedays.focus();
+    return false;
     }
+
+
+
 
 
      
