@@ -1,5 +1,5 @@
 let carYear = document.querySelector('#car-year')
-let cvvInput = document.querySelector('#"cvv')
+let cvvInput = document.querySelector('#cvv')
 
 form.addEventListener('submit', event => {
     event.preventDefault()
@@ -29,14 +29,15 @@ if (datedays.value === "") {
     document.datedays.focus();
     }
 
-function cvvInput (a, b, c)
+function cvvInput (numbers1, numbers2, numbers3)
 
  {
-    if  (cvvInput.value === ("", "", "")) ;
+    if  (cvvInput.value === "" && "" && "") ; 
     else
-    {alert("must contain 3 numbers") ;
-    document.cvvInput.focus();
-    return false; }
+    { alert("must contain 3 numbers") ;
+    cvvInput.focus();
+    return false; 
+ }
 }
 
 
