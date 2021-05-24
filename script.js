@@ -6,10 +6,10 @@ form.addEventListener('submit', event => {
 
 function numbervalidInput(numbers) 
 {
-    document.querySelector("#car-year").required;
-    if (document.querySelector("#car-year")) {} ;
-    else
-    alert ("this field requires numbers") ; 
+    var numbers = /^[0-9]+$/;
+    if (document.querySelector("#car-year").matches(numbers)) {submit} ;
+    else {preventDefault}
+    alert("this field requires numbers") ; 
     document.car-year.focus();
 }
     
@@ -17,11 +17,10 @@ function numbervalidInput(numbers)
 function datedaysInput (numbers)
     datedays.value = ()
 if (datedays.value === "") {
-    function validateNumberInput(numbers)
-    if (datedays.value > 30)
+    function validateNumberInput(numbers)} ;
+    else {datedays.value > 30}
     alert("cannot exceed 30");
     document.datedays.focus();
-    return false;
     }
 
 function cvvInput (a, b, c)
