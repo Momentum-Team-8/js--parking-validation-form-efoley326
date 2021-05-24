@@ -1,26 +1,21 @@
-console.log('Add validation!');
+form.addEventListener('submit', event => {
+    event.preventDefault()
+    numbervalidInput()
+    datedaysInput()
+    cvvInput()
 
-function validateNumberInput(numbers)
-if (numberInput.value === "") {
-    alert("enter only numbers");
-    document.numberInput.focus();
-    return false;
+function numbervalidInput(numbers) 
+{
+    document.querySelector("#car-year").required;
+    if (document.querySelector("#car-year")) {} ;
+    else
+    alert ("this field requires numbers") ; 
+    document.car-year.focus();
 }
-if (!/^[a-zA-Z]*$/.(document.numberInput.value)) {
-    alert("enter only numbers");
-    document.numberInput.focus();
-    return false;
-}
-function caryearInput(numbers)
-
-if (caryear.value < 1900); {
-    alert("choose value larger than 1900")
-    document.caryear.focus();
-    return false;
-}
+    
 
 function datedaysInput (numbers)
-    datedays.value = ""
+    datedays.value = ()
 if (datedays.value === "") {
     function validateNumberInput(numbers)
     if (datedays.value > 30)
@@ -29,7 +24,10 @@ if (datedays.value === "") {
     return false;
     }
 
+function cvvInput (a, b, c)
+{
 
+}
 
 
 
