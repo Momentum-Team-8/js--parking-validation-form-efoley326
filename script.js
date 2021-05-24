@@ -1,5 +1,9 @@
+const form = document.querySelector("#parking-form");
+
 let carYear = document.querySelector('#car-year')
 let cvvInput = document.querySelector('#cvv')
+let datedays = document.querySelector('#start-date')
+
 
 form.addEventListener('submit', event => {
     event.preventDefault()
@@ -8,37 +12,45 @@ form.addEventListener('submit', event => {
     cvvInput()
 })
 
+var numbers = /^[0-9]+$/;
+
+
 function numbervalidInput(numbers) 
 {
-    var numbers = /^[0-9]+$/;
-    if (carYear === numbers);
-    else
-    {alert("this field requires numbers") ; 
-    document.carYear.focus();
-    }
+   if (carYear === numbers);
+   else {
+   alert("car year requires numbers") ; 
+   carYear.focus();
+   }
+   }
 
-  
-function datedaysInput (numbers)
- datedays.value = ""
- {
-if (datedays.value === "") {
-    function numbervalidInput(numbers) }
-    else 
+
+function datedaysInput (numbers) {
+if (datedays === "") 
+    function numbervalidInput(numbers) 
+    {}   
+    else {
     (datedays.value > 30) ;
     alert("cannot exceed 30"); 
-    document.datedays.focus();
-    }
+    datedays.focus(); 
+}
+}
 
-function cvvInput (numbers1, numbers2, numbers3)
+
+
+function cvvValidate (numbers1, numbers2, numbers3)
 
  {
-    if  (cvvInput.value === "" && "" && "") ; 
+    if  (cvvInput === "" && "" && "") ; 
     else
-    { alert("must contain 3 numbers") ;
+    {(cvvInput === "")
+    alert("must contain 3 numbers") ;
     cvvInput.focus();
     return false; 
  }
 }
+
+
 
 
 
